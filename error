@@ -1,0 +1,18 @@
+clang -Wall -g -ferror-limit=0 ethernet.c -c -o ethernet.o
+clang -Wall -g -ferror-limit=0 arp.c -c -o arp.o
+clang -Wall -g -ferror-limit=0 ip.c -c -o ip.o
+clang -Wall -g -ferror-limit=0 icmp.c -c -o icmp.o
+clang -Wall -g -ferror-limit=0 udp.c -c -o udp.o
+clang -Wall -g -ferror-limit=0 tcp.c -c -o tcp.o
+tcp.c:1425:13: warning: unused function 'free_tcb' [-Wunused-function]
+static void free_tcb(TCB *tcb) {
+            ^
+tcp.c:1101:13: warning: unused function 'boar_tcp_user_timeout' [-Wunused-function]
+static void boar_tcp_user_timeout(
+            ^
+2 warnings generated.
+clang -Wall -g -ferror-limit=0 utils.c -c -o utils.o
+clang -Wall -g -ferror-limit=0 marshal.c -c -o marshal.o
+clang -Wall -g -ferror-limit=0 stack.c -c -o stack.o
+clang -Wall -g -ferror-limit=0 socket.c -c -o socket.o
+clang -Wall -g -ferror-limit=0 boar_queue.c -c -o boar_queue.o

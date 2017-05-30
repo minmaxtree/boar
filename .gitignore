@@ -1,0 +1,6 @@
+*.o
+*.a
+*.txt
+tests/*.o
+tests/passive
+tests/active
